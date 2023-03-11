@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #efefef;
+    /* background-color: #efefef; */
+    background-image: linear-gradient(to right top, #f1efef, #ffffee);
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -20,11 +21,12 @@ h1 {
 }
 
 .box {
-    background-color: darkslategrey;
+    /* background-color: darkslategrey; */
+    background-image: linear-gradient(to right top, #fcdf8a, #f38381);
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 400px;
     height: 200px;
     margin: 10px;
@@ -32,6 +34,7 @@ h1 {
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
     transform: translateX(400%);
     transition: transform 0.4s ease;
+    padding: 0px 60px;
 }
 
 .box:nth-of-type(even) {
@@ -44,4 +47,10 @@ h1 {
 
 .box h2 {
     font-size: 45px;
+}
+
+.box img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
 }
